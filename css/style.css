@@ -1,0 +1,235 @@
+body,
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: absolute;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0e0e0e;
+    width: 100%;
+}
+
+.imagemLogo img,
+header > img {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecede3;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.cadastro ul {
+    display: block;
+}
+
+.cadastro ul li {
+    background-color: #ecede3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border: solid black 1px;
+    border-radius: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro ul li a {
+    color: #0e0e0e;
+}
+
+/*Estilização do header acaba aqui*/
+
+.primeira {
+    background-image: url(../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg);
+    height: 825px;
+}
+
+.imagemCentral img {
+    width: 1200px;
+    margin-left: 325px;
+}
+
+/*Estilização da primeira parte */
+
+.segunda {
+    width: 1920px;
+    height: 1080px;
+}
+
+
+
+.primeiraParte {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.caixa {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: #0e0e0e dashed 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.caixa img {
+    width: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.caixa h1 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.segundo img {
+    margin-top: 40px;
+}
+
+.terceiro img {
+    width: 90px;
+    margin-top: 50px;
+}
+
+/* Final da estilização das divs */
+
+.segundaParte {
+    text-align: center;
+}
+
+.cor {
+    background-color: #ECEDE3;
+}
+
+.segundaParte div{
+    padding: 5px 0 5px 0;
+}
+
+.terceiraImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terceiraImagem img {
+    width: 250px;
+}
+
+/*Finalização da SECTION*/
+
+.balao {
+    padding: 20px;
+    width: 500px;
+    background-color: #ECEDE3;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* parte que flutua no meio da pagina*/
+
+
+
+.quartaParte h3 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px;
+    padding: 20px;
+    background-color: #ECEDE3;
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.quartaParte img {
+    width: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);    
+}
+
+
+.elementos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+
+}
+
+.elementos div {
+    background-color: #ECEDE3;
+    padding: 30px;
+    border-radius: 40px;
+    
+}
+
+.ultimaParte {
+    background-color: #ECEDE3;
+    padding: 20px;
+}
+
+.ultimaParte img {
+    width: 150px;
+}
+
+.ultimaParte p {
+    text-align: center;
+}
+
+/* Finalização da ultima parte*/
+
+footer {
+    background-color: black;
+    color: #ECEDE3;
+}
+
+footer img {
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.nomes {
+    padding-top: 10px;
+    margin-left: 20px
+}
+
+.linhaFinal {
+    text-align: center;
+    background-color: rgb(16, 16, 16);
+}
