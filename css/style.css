@@ -23,16 +23,17 @@ header > img {
   height: 6.25em;
 }
 
-nav ul {
+.menu {
   list-style: none;
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
+  gap: 3em;
 }
 
 nav ul li {
-  margin: 0 0.625em;
+  margin: 0.625em;
 }
 
 nav ul li a {
@@ -43,6 +44,59 @@ nav ul li a {
 nav {
   margin-left: auto;
 }
+
+.menu{
+    list-style: none;
+    float: left;
+  }
+  
+  .menu li {
+    position: relative;
+    float: left;
+  }
+  
+  .menu li a {
+    color: #ecede3;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+  }
+  
+  .menu li a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+  }
+  
+  .menu li ul {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #0e0e0e;
+    display: none;
+    list-style: none; 
+    padding: 0; 
+    z-index: 1; 
+  }
+  
+  .menu li:hover > ul {
+    display: block; 
+  }
+  
+  .menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+    position: relative; 
+  }
+  
+  .menu li ul li a {
+    padding: 5px; 
+  }
+  
+  .menu li ul li a:hover {
+    background-color: #ecede3; 
+    color: #000; 
+    }
 
 .cadastro ul {
   display: block;
