@@ -69,8 +69,14 @@ nav {
 }
 
 .imagemCentral img {
+<<<<<<< HEAD
   width: 90em;
   
+=======
+  width: 75em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+>>>>>>> RM99727
 }
 
 .primeiraParte {
