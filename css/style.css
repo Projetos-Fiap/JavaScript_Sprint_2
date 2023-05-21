@@ -65,26 +65,17 @@ nav {
 }
 
 .primeira {
-<<<<<<< HEAD
   height: 45em;
 }
 
 .imagemCentral img {
-<<<<<<< HEAD
-  width: 90em;
-  
-=======
-  width: 75em;
-=======
   height: 90%;
 }
 
 .imagemCentral img {
   width: 100%;
->>>>>>> RM99727
   margin-left: 50%;
   transform: translateX(-50%);
->>>>>>> RM99727
 }
 
 .primeiraParte {
