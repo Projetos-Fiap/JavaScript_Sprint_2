@@ -65,6 +65,7 @@ nav {
 }
 
 .primeira {
+<<<<<<< HEAD
   height: 45em;
 }
 
@@ -74,6 +75,13 @@ nav {
   
 =======
   width: 75em;
+=======
+  height: 90%;
+}
+
+.imagemCentral img {
+  width: 100%;
+>>>>>>> RM99727
   margin-left: 50%;
   transform: translateX(-50%);
 >>>>>>> RM99727
