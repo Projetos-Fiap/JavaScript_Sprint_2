@@ -67,13 +67,8 @@ nav {
 /*Estilização do header acaba aqui*/
 
 .primeira {
-    background-image: url(../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg);
-    height: 825px;
-}
-
-.imagemCentral img {
-    width: 1200px;
-    margin-left: 325px;
+    width: 1920px;
+    height: 893px;
 }
 
 /*Estilização da primeira parte */
