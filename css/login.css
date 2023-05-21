@@ -135,7 +135,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 30%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
