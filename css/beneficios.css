@@ -3,7 +3,7 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   height: 100%;
-  display: absolute;
+  display: block;
   margin: 0;
   overflow-x: hidden;
 }
@@ -47,7 +47,6 @@ nav {
 
 .menu{
     list-style: none;
-    float: left;
   }
   
   .menu li {
@@ -97,10 +96,6 @@ nav {
     background-color: #ecede3; /* adicionado para destacar o item do submenu quando hover */
     color: #000; /* adicionado para garantir a legibilidade do texto */
     }
-
-.cadastro ul {
-      display: block;
-    }
     
 .cadastro ul li {
       background-color: #ecede3;
@@ -132,26 +127,89 @@ nav {
     background-attachment: fixed;
   }
 
+.titulo {
+    background-color: #ecede3;
+    padding: 0.625em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    margin-bottom: 1.25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 1.875em;
+    margin-top: -5em;
+
+  }
+
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxPrimeiro {
+    position: relative;
+    width: 18.75em;
+    height: 18.75em;
+    border: 0.625em dashed #0e0e0e;
+    border-radius: 0.625em;
+    padding: 0.625em;
+    text-align: center;
+  }
+  
+  .boxPrimeiro img {
+    width: 15em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .boxSegundo {
+    position: relative;
+    width: 18.75em;
+    height: 18.75em;
+    border: 0.625em dashed #0e0e0e;
+    border-radius: 0.625em;
+    padding: 0.625em;
+    text-align: center;
+  }
+  
+  .boxSegundo img {
+    width: 10em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+.minilogofooter img {
+    position: absolute; 
+    top: 50%; 
+    bottom: 100%;
+    width: 15.625em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
 footer {
-  background-color: black;
-  color: #ecede3;
-}
-
+    background-color: black;
+    color: #ecede3;
+  }
+  
 footer img {
-  width: 18.75em;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
+    width: 18.75em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
 .nomes {
-  padding-top: 0.625em;
-  margin-left: 1.25em;
-}
-
+    padding-top: 0.625em;
+    margin-left: 1.25em;
+  }
+  
 .linhaFinal {
-  text-align: center;
-  font-size: 0.5em;
-  background-color: rgb(16, 16, 16);
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+    text-align: center;
+    font-size: 0.5em;
+    background-color: rgb(16, 16, 16);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
