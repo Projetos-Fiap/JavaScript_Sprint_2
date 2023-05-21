@@ -71,7 +71,8 @@ nav {
 
 .imagemCentral img {
   width: 75em;
-  margin-left: 20.313em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .primeiraParte {
