@@ -119,7 +119,7 @@ nav {
 }
 
 .banner {
-    background-image: url('../images/imagem\ com\ logo\ de\ reciclagem.png');
+    background-image: url('../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -148,4 +148,6 @@ footer img {
   text-align: center;
   font-size: 0.5em;
   background-color: rgb(16, 16, 16);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
