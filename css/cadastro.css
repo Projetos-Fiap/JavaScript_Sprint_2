@@ -110,9 +110,9 @@ body {
     text-align: left;
   }
 
-  footer img {
+footer img {
     width: 300px;
     margin-left: 50%;
     transform: translateX(-50%);
-  }
+}
   
