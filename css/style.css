@@ -65,12 +65,11 @@ nav {
 }
 
 .primeira {
-  background-image: url(../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg);
-  height: 51.563em;
+  height: 90%;
 }
 
 .imagemCentral img {
-  width: 75em;
+  width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
