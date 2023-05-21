@@ -140,10 +140,13 @@ nav {
     text-align: center;
     border-radius: 1.875em;
     margin-top: -5em;
-
   }
 
   .conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +187,7 @@ nav {
 .minilogofooter img {
     position: absolute; 
     top: 50%; 
-    bottom: 100%;
+    bottom: 0;
     width: 15.625em;
     margin-left: 50%;
     transform: translateX(-50%);
