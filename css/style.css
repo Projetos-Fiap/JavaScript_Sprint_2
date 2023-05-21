@@ -65,25 +65,12 @@ nav {
 }
 
 .primeira {
-<<<<<<< HEAD
-    width: 1920px;
-    height: 893px;
-}
-
-/*Estilização da primeira parte */
-
-.segunda {
-    width: 1920px;
-    height: 1080px;
-=======
-  background-image: url(../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg);
-  height: 51.563em;
+  height: 45em;
 }
 
 .imagemCentral img {
-  width: 75em;
-  margin-left: 20.313em;
->>>>>>> RM99727
+  width: 90em;
+  
 }
 
 .primeiraParte {
