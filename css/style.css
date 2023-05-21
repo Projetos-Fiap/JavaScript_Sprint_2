@@ -1,72 +1,71 @@
 body,
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    height: 100%;
-    display: absolute;
-    margin: 0;
-    overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: absolute;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #0e0e0e;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625em;
+  background-color: #0e0e0e;
+  width: 100%;
 }
 
 .imagemLogo img,
 header > img {
-    width: 100px;
-    height: 100px;
+  width: 6.25em;
+  height: 6.25em;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+  margin: 0 0.625em;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ecede3;
+  text-decoration: none;
+  color: #ecede3;
 }
 
 nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .cadastro ul {
-    display: block;
+  display: block;
 }
 
 .cadastro ul li {
-    background-color: #ecede3;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    border: solid black 1px;
-    border-radius: 140px;
-    display: flex;
-    justify-content: center;
+  background-color: #ecede3;
+  padding: 0.625em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  margin-bottom: 1.25em;
+  border: solid black 1px;
+  border-radius: 8.75em;
+  display: flex;
+  justify-content: center;
 }
 
 .cadastro ul li a {
-    color: #0e0e0e;
+  color: #0e0e0e;
 }
 
-/*Estilização do header acaba aqui*/
-
 .primeira {
+<<<<<<< HEAD
     width: 1920px;
     height: 893px;
 }
@@ -76,155 +75,149 @@ nav {
 .segunda {
     width: 1920px;
     height: 1080px;
+=======
+  background-image: url(../images/vista-aerea-das-arvores-verdes-vibrantes-na-floresta.jpg);
+  height: 51.563em;
 }
 
-
+.imagemCentral img {
+  width: 75em;
+  margin-left: 20.313em;
+>>>>>>> RM99727
+}
 
 .primeiraParte {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 3.75em;
+  margin-top: 3.125em;
+  margin-bottom: 6.25em;
 }
 
 .caixa {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border: #0e0e0e dashed 1px;
-    border-radius: 10px;
-    padding: 10px;
+  position: relative;
+  width: 18.75em;
+  height: 18.75em;
+  border: 0.625em dashed #0e0e0e;
+  border-radius: 0.625em;
+  padding: 0.625em;
 }
 
 .caixa img {
-    width: 60px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  width: 3.75em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .caixa h1 {
-    text-align: center;
-    font-size: 15px;
+  text-align: center;
+  font-size: 0.9375em;
 }
 
 .segundo img {
-    margin-top: 40px;
+  margin-top: 2.5em;
 }
 
 .terceiro img {
-    width: 90px;
-    margin-top: 50px;
+  width: 5.625em;
+  margin-top: 3.125em;
 }
 
-/* Final da estilização das divs */
-
 .segundaParte {
-    text-align: center;
+  text-align: center;
 }
 
 .cor {
-    background-color: #ECEDE3;
+  background-color: #ecede3;
 }
 
-.segundaParte div{
-    padding: 5px 0 5px 0;
+.segundaParte div {
+  padding: 0.3125em 0 0.3125em 0;
 }
 
 .terceiraImagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .terceiraImagem img {
-    width: 250px;
+  width: 15.625em;
 }
-
-/*Finalização da SECTION*/
 
 .balao {
-    padding: 20px;
-    width: 500px;
-    background-color: #ECEDE3;
-    border-radius: 20px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  padding: 1.25em;
+  width: 31.25em;
+  background-color: #ecede3;
+  border-radius: 1.25em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
-/* parte que flutua no meio da pagina*/
-
-
-
 .quartaParte h3 {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 90px;
-    padding: 20px;
-    background-color: #ECEDE3;
-    width: 400px;
-    text-align: center;
-    border-radius: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5.625em;
+  padding: 1.25em;
+  background-color: #ecede3;
+  width: 25em;
+  text-align: center;
+  border-radius: 1.875em;
 }
 
 .quartaParte img {
-    width: 250px;
-    margin-left: 50%;
-    transform: translateX(-50%);    
+  width: 15.625em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
-
 .elementos {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 1000px;
-    margin-left: 50%;
-    transform: translateX(-50%); 
-
+  display: flex;
+  justify-content: center;
+  gap: 3.75em;
+  margin-top: 3.125em;
+  margin-bottom: 6.25em;
+  width: 62.5em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .elementos div {
-    background-color: #ECEDE3;
-    padding: 30px;
-    border-radius: 40px;
-    
+  background-color: #ecede3;
+  padding: 1.875em;
+  border-radius: 2.5em;
 }
 
 .ultimaParte {
-    background-color: #ECEDE3;
-    padding: 20px;
+  background-color: #ecede3;
+  padding: 1.25em;
 }
 
 .ultimaParte img {
-    width: 150px;
+  width: 9.375em;
 }
 
 .ultimaParte p {
-    text-align: center;
+  text-align: center;
 }
 
-/* Finalização da ultima parte*/
-
 footer {
-    background-color: black;
-    color: #ECEDE3;
+  background-color: black;
+  color: #ecede3;
 }
 
 footer img {
-    width: 300px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  width: 18.75em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .nomes {
-    padding-top: 10px;
-    margin-left: 20px
+  padding-top: 0.625em;
+  margin-left: 1.25em;
 }
 
 .linhaFinal {
-    text-align: center;
-    background-color: rgb(16, 16, 16);
+  text-align: center;
+  background-color: rgb(16, 16, 16);
 }
