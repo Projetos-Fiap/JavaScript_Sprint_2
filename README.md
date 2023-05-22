@@ -14,4 +14,4 @@ O nosso projeto consiste em um site que mapeia os Ecopontos e os demais pontos d
 <li>Vitor Maia (RM99658)</li>
 
 ### Imagem
-![Imagem](link)
+![Imagem](https://github.com/Projetos-Fiap/Front_End_Sprint_2/blob/main/images/home.png?raw=true)
