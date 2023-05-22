@@ -204,4 +204,9 @@ footer img {
     padding-bottom: 0;
   }
   
-  
+  form p {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 11px;
+    margin-top: 0px;
+    color: red;
+}

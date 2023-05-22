@@ -12,6 +12,7 @@
     <header>
         <div class="imagemLogo">
             <img src="../images/logo reciclagem branco.png" alt="Foto da logo do SP+S">
+            <script src="../js/cadastro.js" defer></script>
         </div>
 
         <nav>
@@ -44,56 +45,61 @@
     <div class="imagemCentral"></div>
     <div class="registration-container">
         <h1>Cadastro de Usuário</h1>
-        <form id="registrationForm">
+        <form id="registrationForm" onsubmit="return validaCamposVazios()">
             <div id="msgError"></div>
             <div id="msgSuccess"></div>
     
             <div class="label-float">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" class="name" name="name" oninput="validaPrimeiroNome()">
+                <p class="errorName"></p>
             </div>
     
             <div class="label-float">
                  <label for="lastName">sobrenome</label>
-                 <input type="text" id="lastName" name="lastName" required>
-    
+                 <input type="text" id="lastName" class="lastName" name="lastName" oninput="validaSegundoNome()">
+                 <p class="errorLastName"></p>
             </div>
     
             <div class="label-float">
                 <label for="cpf">CPF</label>
-                <input type="text" id="cpf" name="cpf" required>
+                <input type="text" id="cpf" class="cpf" name="cpf" oninput="validaCpf()">
+                <p class="errorCpf"></p>
             </div>
     
             <div class="label-float">
                 <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" required>
+                <input type="text" id="cep" class="cep" name="cep" oninput="validaCep()">
+                <p class="errorCEP"></p>
               </div>
               
     
             <div class="label-float">
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" class="password" name="password" oninput="validaPassword()">
                 <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                <p class="errorPassword"></p>
             </div>
     
             <div class="label-float">
                 <label for="confirmPassword">Confirme a senha:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" id="confirmPassword" class="confirmPassword" name="confirmPassword" oninput="validaConfirmPassword()">
                 <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                <p class="errorConfirmPassword"></p>
             </div>
     
             <div class="label-float">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" class="email" name="email" oninput="validaEmail()">
+                <p class="errorEmail"></p>
             </div>
     
             <div class="justify-center">
-                <button type="submit" id="submitBtn">Cadastrar</button>
+                <button type="submit" id="submitBtn" class="submitBtn">Cadastrar</button>
             </div>
     
         
         </form>
-        <script src="../js/cadastro.js" defer></script>
     </div>
 </section>
 

@@ -1,77 +1,183 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio do formulário padrão
+function validaPrimeiroNome(){
+  let campo = document.querySelector('.name');
+  let p = document.querySelector(".errorName")
 
-  let errorMessages = [];
-  let isValid = false;
+  if (campo.value.length < 5){
+      p.innerHTML = "Mínimo de 5 dígitos";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText = "";
+      return true;
+  }
+}
 
-  while (!isValid) {
-    // Lógica de validação dos campos do formulário
-    let name = document.getElementById("name").value;
-    let lastName = document.getElementById("lastName").value;
-    let cpf = document.getElementById("cpf").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-    let cep = document.getElementById("cep").value;
+function validaSegundoNome(){
+  let campo = document.querySelector('.lastName');
+  let p = document.querySelector(".errorLastName")
 
-    errorMessages = [];
+  if (campo.value.length < 5){
+      p.innerHTML = "Mínimo de 5 dígitos";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText = "";
+      return true;
+  }
+}
 
-    // Verificação dos campos do formulário
-    if (name.length < 5) {
-      errorMessages.push("O nome deve ter pelo menos 5 letras.");
-    }
+function validaCpf(){
+  let campo = document.querySelector('.cpf');
+  let p = document.querySelector(".errorCpf")
 
-    if (lastName.length < 5) {
-      errorMessages.push("O sobrenome deve ter pelo menos 5 letras.");
-    }
+  if (!validarCPF(campo.value)){
+      p.innerHTML = "CPF inválido!";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText = "";
+      return true;
+  }
+}
 
-    if (!/^\d{11}$/.test(cpf)) {
-      errorMessages.push("O CPF deve conter 11 números.");
-    }
+function validaCep(){
+  let campo = document.querySelector('.cep');
+  let p = document.querySelector(".errorCEP")
 
-    if (email.length < 5 || !email.includes("@")) {
-      errorMessages.push("O email deve conter pelo menos 5 letras e um '@'.");
-    }
+  if (!validarCEP(campo.value)){
+      p.innerHTML = "CEP inválido!";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText = "";
+      return true;
+  }
+}
 
-    if (!/^\d{8}$/.test(cep)) {
-      errorMessages.push("O CEP deve conter 8 números.");
-    }
+function validaPassword(){
+  let campo = document.querySelector('.password');
+  let p = document.querySelector(".errorPassword");
 
-    if (password !== confirmPassword) {
-      errorMessages.push("As senhas não correspondem.");
-    }
+  if(campo.value.length < 6 || campo.value.length > 8){
+      p.innerHTML = "A senha deve ter entre 6 e 8 caracteres";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText  = "";
+      return true;
+  }
+}
 
-    // Verificação de erros
-    if (errorMessages.length > 0) {
-      // Exibir mensagens de erro
-      document.getElementById("msgError").innerHTML = errorMessages.join("<br>");
-      break; // Sai do loop se houver erros
-    } else {
-      isValid = true; // Define isValid como true para sair do loop
-    }
+function validaConfirmPassword(){
+  let password = document.querySelector('.password');
+  let confirmPassword = document.querySelector('.confirmPassword');
+  let p = document.querySelector(".errorConfirmPassword");
+
+  if( password.value != confirmPassword.value){
+      p.innerHTML = "As senhas devem ser iguais"
+      return false;
+  } else {
+      p.innerHTML = ""
+      return true;
+  }
+}
+
+function validaEmail(){
+  let campo = document.querySelector('.email');
+  let p = document.querySelector(".errorEmail");
+
+  if (campo.value.length < 5){
+      p.innerHTML = "Mínimo de 5 dígitos";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else if(!campo.value.includes("@")){
+      p.innerHTML = "O caracter @ é necessário";
+      campo.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
+      return false;
+  } else {
+      p.innerHTML = "";
+      campo.style.cssText  = "";
+      return true;
+  }
+}
+
+function validarCPF(cpf) {
+cpf = cpf.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+if (cpf.length !== 11 || isSequenciaRepetida(cpf)) {
+  return false; // Verifica se o CPF possui 11 dígitos e não é uma sequência repetida
+}
+
+var soma = 0;
+var resto;
+
+for (var i = 1; i <= 9; i++) {
+  soma += parseInt(cpf.charAt(i - 1)) * (11 - i);
+}
+
+resto = (soma * 10) % 11;
+
+if (resto === 10 || resto === 11) {
+  resto = 0;
+}
+
+if (resto !== parseInt(cpf.charAt(9))) {
+  return false; // Verifica o primeiro dígito verificador
+}
+
+soma = 0;
+
+for (var i = 1; i <= 10; i++) {
+  soma += parseInt(cpf.charAt(i - 1)) * (12 - i);
+}
+
+resto = (soma * 10) % 11;
+
+if (resto === 10 || resto === 11) {
+  resto = 0;
+}
+
+if (resto !== parseInt(cpf.charAt(10))) {
+  return false; // Verifica o segundo dígito verificador
+}
+
+return true; // CPF válido
+}
+
+function validarCEP(cep) {
+  // Remove caracteres não numéricos
+  cep = cep.replace(/\D/g, '');
+
+  // Verifica se o CEP possui o tamanho correto
+  if (cep.length !== 8) {
+    return false;
   }
 
-  if (isValid) {
-    // Limpar mensagens de erro
-    document.getElementById("msgError").innerHTML = "";
-
-    // Exibir mensagem de sucesso
-    document.getElementById("msgSuccess").innerHTML = "Cadastro realizado com sucesso!";
-
-    // Reseta o formulário
-    document.getElementById("registrationForm").reset();
-
-    // Armazena os dados no localStorage
-    localStorage.setItem('name', name);
-    localStorage.setItem('lastName', lastName);
-    localStorage.setItem('cpf', cpf);
-    localStorage.setItem('email', email);
-    localStorage.setItem('cep', cep);
-
-    console.log("Cadastro concluído");
-
-    // Redireciona para a página principal
-    window.location.replace("../index.html");
+  // Verifica se o CEP é composto apenas por dígitos repetidos (ex: 11111111)
+  if (isSequenciaRepetida(cep)) {
+    return false;
   }
-});
 
+  return true;
+}
+
+function isSequenciaRepetida(cpf) {
+  var sequencia = cpf.charAt(0).repeat(cpf.length);
+  return sequencia === cpf;
+}
+
+function validaCamposVazios(){
+  let validacao = validaPrimeiroNome() & validaSegundoNome() & validaCpf() & validaCep()  & validaPassword() & validaConfirmPassword() & validaEmail();
+
+  if(validacao != 1){
+      alert("Há campos com entradas inválidas!");
+      return false;
+  }
+
+  return true;
+}
