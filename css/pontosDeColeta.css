@@ -151,13 +151,14 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 90%;
+    position: relative;
     background-attachment: fixed;
-    text-align: center;
-    padding: 10px 0px 0px;
-    margin: auto;
-    width: 900px;
-    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .primeiraSessao > img {
     width: 300px;
     height: 120px;
