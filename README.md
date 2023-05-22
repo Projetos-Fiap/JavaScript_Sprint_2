@@ -1,4 +1,4 @@
-# Front End: Challenge, Sprint 2 - Site do projeto
+# JavaScript: Challenge, Sprint 2 - Site do projeto
 
 ### Introdução
 Como andamento ao projeto iniciado no Sprint 1 (https://github.com/Projetos-Fiap/FrontEnd-Challenge-Sprint1), nesta continuação do projeto reformulamos o site para melhorar seu design e funcionamento, implementando novos conhecimentos de HTML, CSS e JavaScript.
